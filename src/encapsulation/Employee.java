@@ -1,4 +1,7 @@
-package gettersetters;
+package encapsulation;
+
+//wrap up in one class
+//declare variables as private and access using getters and setters
 
 public class Employee {
       private int id;

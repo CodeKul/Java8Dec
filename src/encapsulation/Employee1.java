@@ -1,4 +1,4 @@
-package gettersetters;
+package encapsulation;
 
 
 public class Employee1{
