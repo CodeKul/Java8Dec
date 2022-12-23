@@ -4,12 +4,12 @@ package encapsulation;
 //declare variables as private and access using getters and setters
 
 public class Employee {
-      private int id;
+      private int id=4;
       private String name;
       private String address;
 
       public void setId(int i){
-          id=i;
+          this.id=i;
       }
     public int getId(){
 

@@ -9,6 +9,10 @@ public class Employee1{
         obj1.setName("abc");
         System.out.println(obj1.getId());
         System.out.println(obj1.getName());
+        obj1.setId(12);
+        obj1.setName("agjhgkjbc");
+        System.out.println(obj1.getId());
+        System.out.println(obj1.getName());
 
     }
 }

@@ -9,7 +9,11 @@ abstract public class AbstractDemo {
     }
 
     public abstract void play();//abstract method
-    public abstract void exercise();//abstract method
+
+    public void exercise()//abstract method
+    {
+
+    }
 
 }
 
