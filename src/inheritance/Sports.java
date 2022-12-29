@@ -1,9 +1,9 @@
 package inheritance;
 
-//acquiring all properties and method of parent class
-//it creates parent child relationship
-//advantage--code re-usability
-
+/**acquiring all properties and method of parent class
+it creates parent child relationship
+advantage--code re-usability
+*/
 public class Sports {
     int i=1;
     public void show(){

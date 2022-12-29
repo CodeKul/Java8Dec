@@ -1,8 +1,10 @@
 package polymorphism;
 
 //method overloading
+//    - same class we have same method name with different number of arguments
+//     advantage -> it increases readability of program
 
-//advantage--improves code readbility
+
 public class Addition {
     public void add(){
         System.out.println("in add method");

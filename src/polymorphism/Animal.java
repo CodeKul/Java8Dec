@@ -1,5 +1,5 @@
 package polymorphism;
-/*
+/**
 polymorphism--taking multiple forms of single thing
 method overloading--
 --method name is same but parameters may be different

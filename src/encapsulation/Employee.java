@@ -1,7 +1,13 @@
 package encapsulation;
 
-//wrap up in one class
-//declare variables as private and access using getters and setters
+/**
+ * encapsulation - wrapping a data and code in single unit .
+ * making field private and giving access them via public getter and setter
+ *
+ * advantage ->
+ *  you can make class read only or write only
+ *  you can protect from unauthorized access
+ */
 
 public class Employee {
       private int id=4;

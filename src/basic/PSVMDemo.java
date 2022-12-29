@@ -16,6 +16,9 @@ public class PSVMDemo {
      * static-allows methods to be invoked without creating objects of the class
      * void--return nothing
      * main--entry point for java program execution
+     *
+     *  * String[] -> parameter string of array or command line argument
+     *      * args -> variable name
      */
     public static void main(String[] args) {
 //        ClassOne obj=new ClassOne();
