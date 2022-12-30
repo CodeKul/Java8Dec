@@ -1,0 +1,27 @@
+1. Create an abstract class Vehicle. Bike,Car are childs of Vechile.Implement method overriding and method overloading for color() method and runatspeed(speed) method respectively.
+2. Enter no from user and check if given no is divisible by 3 & 5 using if-else
+	 --> given no is divisible by 5 only, 	 --> given no is divisible by 3 only, 	 --> given no is divisible by 3 and 5
+
+3. Enter alphabet and check if it is Vowel else display message “not a vowel” using swich case.
+
+4.Write a program to create a room class, the attributes of this class is roomno, roomtype, roomarea. In this class the member functions are setdata and displaydata.
+
+5.Write a program to add 8 to the number 2345 and then divide it by 3. Now, the modulus of the result is taken multiply with 5 and Display the final result.
+
+6. Write a program to input a number from the user and display the corresponding day of the week.
+7. What is ternary operator? Give an example(Program).
+
+8.Explain Object oriented conecpts with example.
+
+9. Write a program to create a class Student and do the following:
+  a) Create a member variables (rollNo, Name, contactNo, Total marks)
+  b) Create another method to display the data of Student class.
+  c) Create object of Student class and access these
+     methods in a new class –
+     StudentDemo.java.
+10.Number Pattern Program in java
+1
+2 3
+4 5 6
+7 8 9 10
+11 12 13 14 15
