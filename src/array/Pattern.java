@@ -90,10 +90,10 @@ public class Pattern {
                 arr[i][minCol] = value;
                 value++;
             }
-            minCol++;
-            minRow++;
-            maxCol--;
-            maxRow--;
+//            minCol++;
+//            minRow++;
+//            maxCol--;
+//            maxRow--;
         }
 
         for (int i = 0; i < arr.length; i++)
