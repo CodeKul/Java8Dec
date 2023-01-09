@@ -1,5 +1,5 @@
 package thisdemo;
-
+//this initializes current instance of class
 public class ThisDemo {
     int id;
     String name;
@@ -25,10 +25,10 @@ public class ThisDemo {
 
     public static void main(String[] args) {
         ThisDemo obj=new ThisDemo(6);
+
         obj.setValues(11,"abc","pune");
         obj.setValues(12,"xyx","pune");
         System.out.println("id:"+obj.id+" name:"+obj.name+" address:"+obj.address);
-
 
     }
 
