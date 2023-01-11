@@ -13,7 +13,7 @@ public class StringDemo {
         System.out.println(str1);
         System.out.println(str4);
 
-        System.out.println(str.substring(0,4));
+        System.out.println(str.substring(0));
         System.out.println(str.substring(3));
 
         System.out.println(str.concat(str2));

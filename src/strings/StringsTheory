@@ -1,0 +1,80 @@
+String is a--
+
+- sequence of characters
+- array of characters
+
+
+Ways to create a String
+1. char[] ch = {'W','E','L','C','O','M','E'}
+
+  --by using new keyword
+2. String s = new String(ch);
+
+  -- by using string literal
+3. String s1 = "WELCOME";
+
+
+Immutable String
+ - unmodifiable or unchangeable
+ - state & data can not be changed
+
+ String Compare
+ 1. By using equals() method
+    - compares the content of string
+ 2. By using == operator
+    - compares references not content
+ 3. By compareTo() method
+    - compares the values lexicographically & return an integer
+    a)   0 : s1==s2
+    b) > 0 : s1>s2
+    c) < 0 : s1<s2
+
+String Concatenation:
+ - combination of multiple strings
+ 1. by using + operator
+ 2. concat method
+
+ Substring
+  - part of string
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Homework
+
+Write a Java method to check whether a string is a valid password.
+Password rules:
+A password must have at least ten characters.
+A password consists of only letters and digits.
+A password must contain at least two digits.
+
+Expected Output:
+
+1. A password must have at least eight characters.
+2. A password consists of only letters and digits.
+3. A password must contain at least two digits
+Input a password : abcd1234
+Password is valid: abcd1234
+
+
+
+
+Write a Java method that checks whether all the characters in a given string are vowels (a, e,i,o,u) or not.
+ Return true if each character of the string is a vowel, otherwise return false.
+
+Expected Output:
+
+Input a string:  AIEEE
+Check all the characters of the said string are vowels or not!
+true
