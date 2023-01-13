@@ -1,12 +1,34 @@
 package strings;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class StringMethods {
     public static void main(String[] args) {
-        String str1="welcome to \njava";
-        System.out.println(str1);
-        String str2="Hello";
+//        String str1="welcome to \njava";
+//        System.out.println(str1);
+        String str2="Pune is metrocity";
+        System.out.println(str2);
+        System.out.println("reverse string is:");
+
+        String array[]=str2.split(" ");
+        System.out.println(Arrays.toString(array));
+
+
+        for(String s:array){
+            for(int i=s.length()-1;i>=0;i--)
+            {
+                System.out.print(s.charAt(i));
+
+            }
+            System.out.print(" ");
+        }
+
+
+
+
+
+
 //        Scanner sc=new Scanner(System.in);
 //        String str4=sc.nextLine();
 //        System.out.println(str4);

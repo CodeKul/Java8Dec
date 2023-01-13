@@ -12,6 +12,7 @@ public class StringBufferDemo {
       System.out.println(stringBuilder);
       System.out.println(stringBuilder.append(" is education hub"));
       System.out.println(stringBuilder);
+      System.out.println(stringBuilder.reverse());
 
 
 //      String str="pune";
