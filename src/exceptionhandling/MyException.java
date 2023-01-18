@@ -12,7 +12,7 @@ public class MyException {
     public static void main(String[] args) {
         double k= 0;
         try {
-            k = calculateArea(0);
+            k = calculateArea(-1);
             System.out.println(k);
         } catch (NegativeRadiousException e) {
             System.out.println(e);
