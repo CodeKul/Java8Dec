@@ -18,6 +18,11 @@ class MyThread6 extends Thread{
         int i=0;
         while(i<100){
             System.out.println("I am in thread 6");
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
             i++;
         }
         System.out.println(Thread.currentThread().getState());
