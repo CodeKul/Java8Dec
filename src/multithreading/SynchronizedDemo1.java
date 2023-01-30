@@ -9,7 +9,7 @@ class Account{
         this.bal=amt;
     }
 
-    public Boolean inSuffcientBalance(int wamt) {
+    public Boolean inSufficientBalance(int wamt) {
         if (bal > wamt){
             return true;
         }
@@ -17,8 +17,6 @@ class Account{
             return false;
         }
     }
-
-
     public void withdraw(int amnt){
         bal=bal-amnt;
         System.out.println("balance is:"+bal);
@@ -39,12 +37,12 @@ class Customer implements Runnable{
     public void run() {
         Scanner sc=new Scanner(System.in);
         int amount;
-        synchronized (account){
+    synchronized (account){
         System.out.println(Thread.currentThread().getName()+"enter amount to be withdraw:");
         amount=sc.nextInt();
-        account.inSuffcientBalance(amount);
+        account.inSufficientBalance(amount);
         account.withdraw(amount);}
-    }
+   }
 }
 
 public class SynchronizedDemo1 {

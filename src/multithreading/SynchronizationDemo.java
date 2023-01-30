@@ -12,7 +12,7 @@ public class SynchronizationDemo {
 
         SynchronizationDemo obj = new SynchronizationDemo();
 
-        Thread t1 = new Thread(()->{
+        Thread t1 = new Thread(()->{        //lambda expression
 
             for(int i=1;i<=1000;i++) {
                 obj.increment();
