@@ -1,3 +1,5 @@
+import exceptionhandling.BankExample;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -60,30 +62,29 @@ public class Student {
 
     @Override
     public String toString() {
-        StringBuilder builder = new StringBuilder("Student Details\n");
-        builder.append("Id :"+id+"\n");
-        builder.append("Full Name : "+firstName+" "+middleName+" "+lastName+"\n");
-        builder.append("Contact No. "+contactNumber+"\n");
-        return builder.toString();
+        StringBuilder stringBuilder=new StringBuilder();
+        stringBuilder.append("Roll No:"+id+"\n");
+        stringBuilder.append("StudentName:"+firstName+" "+middleName+" "+lastName+"\n");
+        stringBuilder.append("Contact::"+contactNumber+"\n");
+        return stringBuilder.toString();
     }
 }
 class StudentImpl{
     public static void main(String[] args) {
         List<Student> students = new ArrayList<>();
-        Scanner sc = new Scanner(System.in);
+        char ch;
         StudentImpl studentImpl = new StudentImpl();
-        int ch;
+        System.out.println("Student Management\n1.Insert\n2.Update\n3.Display\n4.Delete");
+        System.out.println("Enter Your Choice");
+        Scanner sc=new Scanner(System.in);
+        int choice=sc.nextInt();
+
         do{
-            System.out.println("1.Insert");
-            System.out.println("2.Update Record");
-            System.out.println("3.Delete Record");
-            System.out.println("4.Display");
-            System.out.println("Enter your choice");
-            ch = sc.nextInt();
-            switch (ch){
+            switch (choice){
                 case 1:
                     Student s = studentImpl.insertStudentData(sc);
                     students.add(s);
+                    System.out.println("Student inserted Successfully..");
                     break;
                 case 2:
                     if (students.isEmpty())
@@ -91,19 +92,26 @@ class StudentImpl{
                     else {
                         studentImpl.updateRecord(sc,students);
                     }
+                    System.out.println("Student updated Successfully..");
                     break;
                 case 3:
-                    if (students.isEmpty())
-                        System.out.println("List is empty");
-                    else {
-                        studentImpl.deleteRecord(students,sc);
-                    }
-                    break;
-                case 4:
                     studentImpl.display(students);
                     break;
+                case 4:
+                if (students.isEmpty())
+                    System.out.println("List is empty");
+                else {
+                    studentImpl.deleteRecord(students,sc);
+                }
+                    System.out.println("Student deleted Successfully..");
+                break;
             }
-        }while (ch<5);
+            System.out.println("do you want to continue:");
+            ch=sc.next().charAt(0);
+            System.out.println("Student Management\n1.Insert\n2.Update\n3.Display\n4.Delete");
+            System.out.println("Enter Your Choice");
+            choice=sc.nextInt();
+        }while  (ch=='y' || ch=='Y');
     }
 
     private void display(List<Student> students){
@@ -119,7 +127,6 @@ class StudentImpl{
         Iterator<Student> iterator = students.iterator();
         while (iterator.hasNext()){
             if (iterator.next().getId() == id){
-                //students.remove(iterator.next());
                 iterator.remove();
             }
         }
@@ -130,11 +137,12 @@ class StudentImpl{
         Integer id = sc.nextInt();
         System.out.println("Enter contact number to update record for id "+id);
         String mbl = sc.next();
-        for(Student s:students){
+        students.forEach(s->{
             if (s.getId() == id){
                 s.setContactNumber(mbl);
             }
-        }
+        });
+
 
     }
     private Student insertStudentData(Scanner sc) {
