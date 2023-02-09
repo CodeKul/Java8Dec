@@ -1,60 +1,55 @@
 package collectionframework;
 
+
+class Node{
+    int data;
+    Node next;
+
+    public Node(int data) {
+        this.data = data;
+        this.next=null;
+    }
+}
 public class MyLinkedList {
     Node head;
-    void add(int data){
 
+    void add(int data){
         Node toAdd=new Node(data);
 
-        if(head==null){
+        if(isEmpty()){
             head=toAdd;
+            return;
+        }
+        Node temp=head;
+        while (temp.next!=null){
+            temp=temp.next;
+        }
+        temp.next=toAdd;
+    }
+
+
+    boolean isEmpty(){
+        if(head==null){
+            return true;
         }
         else {
-            Node temp=head;
-            while (temp.next!=null){
-                temp=temp.next;
-            }
+            return false;
         }
-
     }
 
     void print(){
         Node temp=head;
         while (temp!=null){
-            System.out.println(temp.data+" ");
+            System.out.print(temp.data+" ");
             temp=temp.next;
         }
     }
 
-
-    static class Node{
-        int data;
-        Node next;
-
-        public Node(int data) {
-            this.data = data;
-            next=null;
-        }
-
-
-    }
-
-}
-
-class MyClass{
     public static void main(String[] args) {
         MyLinkedList list=new MyLinkedList();
         list.add(23);
         list.add(23);
         list.add(23);
         list.print();
-
-
     }
-
-
-
-
 }
-
-

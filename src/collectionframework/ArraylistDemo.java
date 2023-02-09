@@ -7,6 +7,8 @@ import java.util.List;
 public class ArraylistDemo {
     public static void main(String[] args) {
        ArrayList<Integer> list1=new ArrayList<>();
+
+       List<Integer> list7=new ArrayList<>();
        list1.add(10);
        list1.add(20);
        list1.add(30);

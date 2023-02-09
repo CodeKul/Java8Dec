@@ -11,18 +11,22 @@ public class GenericList {
         list1.add(10);
         list1.add(10);
         list1.add(10);
+        listed(list1);
 
         List<String> list2=new ArrayList<>();
         list2.add("asdas");
         list2.add("asdas");
         list2.add("asdas");
         list2.add("asdas");
+        listed(list2);
 
         List<?> list3= Arrays.asList(12,43.4,"dsfsd");
-        System.out.println(list3);
-        int i= (int) list3.get(0);
-        System.out.println(i);
+        listed(list3);
 
+
+    }
+    public static void listed(List<?> list){
+        list.forEach(System.out::println);
     }
 
 }
