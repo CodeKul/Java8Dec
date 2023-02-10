@@ -1,7 +1,6 @@
 package collectionframework;
 
 import java.util.PriorityQueue;
-import java.util.Queue;
 
 public class QueueDemo {
     public static void main(String[] args) {
@@ -11,6 +10,8 @@ public class QueueDemo {
         queue.add(33);
         queue.add(43);
         queue.add(23);
+        queue.add(23);
+
         System.out.println(queue);
         System.out.println(queue.contains(23));
         System.out.println(queue.remove());
