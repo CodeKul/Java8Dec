@@ -23,7 +23,6 @@ public class SetOperations {
             System.out.println(set1);
             System.out.println("set2 is subset of set1");
         }
-
         set1.addAll(set2);
         System.out.println("union:"+set1);
 
