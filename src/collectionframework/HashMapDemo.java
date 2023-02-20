@@ -41,9 +41,9 @@ public class HashMapDemo {
             System.out.println();
         }
 
-        for(Map.Entry<Integer,String >entry: map.entrySet()){
-            System.out.print(entry.getKey()+" ");
-            System.out.print(entry.getValue());
+        for(Map.Entry<Integer,String >i: map.entrySet()){
+            System.out.print(i.getKey()+" ");
+            System.out.print(i.getValue());
             System.out.println();
         }
 
