@@ -11,6 +11,7 @@ public class StringMethods {
         System.out.println(str2);
         System.out.println("reverse string is:");
 
+
         String array[]=str2.split(" ");
         System.out.println(Arrays.toString(array));
 

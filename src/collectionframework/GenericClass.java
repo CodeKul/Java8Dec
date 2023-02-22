@@ -1,7 +1,5 @@
 package collectionframework;
 
-import agrregation.Employee;
-
 public class GenericClass<T> {
     private T t;
 

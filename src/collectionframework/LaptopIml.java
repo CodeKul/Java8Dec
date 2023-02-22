@@ -2,10 +2,9 @@ package collectionframework;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
-public class ComparableDemo {
+public class LaptopIml {
     public static void main(String[] args) {
         List<Laptop> laptops=new ArrayList<>();
         Laptop l1=new Laptop(201,"Dell",80000L);
