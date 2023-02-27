@@ -24,13 +24,13 @@ public class FileMethod {
             System.out.println(file.canExecute());
             System.out.println(file.isFile());
             System.out.println(file.length());
-            FileWriter writer=new FileWriter("\"/home/nexttechvision/workspace/java8Dec/java8Dec/src/filehandling/test1.txt\"");
+//            FileWriter writer=new FileWriter("\"/home/nexttechvision/workspace/java8Dec/java8Dec/src/filehandling/test1.txt\"");
 
 
 
 
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            System.out.println("Some error occured");
         }
     }
 }

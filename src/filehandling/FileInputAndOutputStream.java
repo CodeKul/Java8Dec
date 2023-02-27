@@ -1,18 +1,16 @@
 package filehandling;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
+import java.io.*;
 
 public class FileInputAndOutputStream {
     public static void main(String[] args) {
-//        File file =new File("Sample.txt");
-//        try {
-//            file.createNewFile();
-//            System.out.println("File created successfully.");
-//        } catch (IOException e) {
-//            System.out.println("Some Error occured");
-//        }
+        File file =new File("Sample.txt");
+        try {
+            file.createNewFile();
+            System.out.println("File created successfully.");
+        } catch (IOException e) {
+            System.out.println("Some Error occured");
+        }
 
         try {
             FileOutputStream stream=new FileOutputStream("Sample.txt");

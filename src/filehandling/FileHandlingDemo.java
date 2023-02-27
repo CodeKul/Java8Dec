@@ -4,7 +4,7 @@ import java.io.*;
 
 public class FileHandlingDemo {
     public static void main(String[] args) {
-        File file=new File("test.txt");
+        File file=new File("/home/nexttechvision/workspace/java8Dec/java8Dec/src/filehandling/test.txt");
         try {
             file.createNewFile();
             System.out.println(file.getPath());
