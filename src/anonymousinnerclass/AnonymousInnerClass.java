@@ -16,6 +16,9 @@ public class AnonymousInnerClass {
     }
 }
 interface Add{
-    int addition(int i,int j);
+    default int addition(int i, int j) {
+        return 0;
+    }
+
     int subtraction(int i,int j);
 }
